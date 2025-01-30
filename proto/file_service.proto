@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option go_package = "proto/generated";
-
 package file_service;
+
+option go_package = "proto/generated";
 
 service FileService {
   rpc UploadFile(stream UploadFileRequest) returns (UploadFileResponse);
